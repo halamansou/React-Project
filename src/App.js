@@ -17,6 +17,12 @@ function App() {
       <>
       <Route path='/' element={<SharedLayout />}>
         <Route index element={<Home />} />
+        <Route
+						path='products'
+						loader={getAllProducts}
+						errorElement={<Error />}
+						element={<Products />}
+					/>
         <Route path='/Products'  element={<Products/>} />
         <Route path='/Products/:id'  element={<ProductDetails/>} />
         <Route path='/Products/:id/edit'  element={<ProductForm/>} />

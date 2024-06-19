@@ -11,7 +11,9 @@ export  function MyNav() {
                     <Nav className="ms-auto">
                         <NavLink className={( { isActive } ) => isActive ? ' nav-link bg-danger-subtle' : 'nav-link'} to="/">Home</NavLink>
                         <NavLink className={( { isActive } ) => isActive ? ' nav-link bg-danger-subtle' : 'nav-link'} to="/products">Products</NavLink>
-                        <NavLink className={( { isActive } ) => isActive ? ' nav-link bg-danger-subtle' : 'nav-link'} to="/fff">Login</NavLink>
+                        <NavLink className={( { isActive } ) => isActive ? ' nav-link bg-danger-subtle' : 'nav-link'} to="/login">Login</NavLink>
+                        <NavLink className={( { isActive } ) => isActive ? 'text-success nav-link' : 'nav-link'} to="/counter">Counter ({count})</NavLink>
+
 
                     </Nav>
                 </Navbar.Collapse>
